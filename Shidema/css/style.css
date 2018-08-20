@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Arimo);
+html,body {	font-family: "Arimo"; }
+a   	  { text-decoration: none; }
+
+html, body{
+	font-family: 'Raleway';
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #393847;
+	/*background-image: url("https://avatanplus.com/files/resources/original/599282e42037915de44f4b24.jpg");
+	*/-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center bottom;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+@keyframes animate_nav {
+	0%{transform: translateX(-100%);}
+	100%{transform: translateX(0);}
+}
+@keyframes animate_top_rect {
+	0% { width: 0px; }
+	100% { width: 200px; }
+}
+@keyframes animate_ball {
+	0% { width: 0px; }
+	100% { width: 100px; }
+}
+@keyframes animate_tria {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes animate_logo {
+	0% {transform:translate(0px, -140px);}
+	100% {transform:translate(-290px, -140px);}
+}
+@keyframes animate_wrapper {
+	0% {transform:translateX(0px);}
+	100% {transform:translateX(200px);}
+}
+/* animation of logo*/
+.logo_shidema_animate {
+	position: relative;
+	transform: translate(0px, -140px);	
+	animation: animate_logo 0.5s linear;
+	animation-fill-mode: forwards;
+	animation-delay: 0.9s;
+}
+
+.logo_shidema_animate div {
+	position: absolute;animation-fill-mode: forwards;
+}
+/* style of rectangles */
+.top_rect_animate, .bottom_rect_animate {
+	width: 200px;
+	height: 80px;
+	background-color: #d9d9d9;
+	top: 0;
+	left: 0;
+
+}
+/* animation of top rectangle */
+.top_rect_animate{
+	width: 0;
+	animation-delay: 0s;
+	animation: animate_top_rect 0.5s linear;
+}
+/* animation of ball */
+.ball_animate {
+	width: 100px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: #d9d9d9;
+	border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+	top: 80px;
+	z-index: 3;
+	animation: animate_ball 0.5s linear;
+	animation-delay: 0.4s;
+	width: 0;
+}
+/* animation of triangle */
+.triangle_animate {
+	border: 100px solid transparent; border-top: 280px solid #fff;
+	left: -100px;
+	opacity: 0.95;
+	z-index: 4;
+	animation: animate_tria 0.5s linear;
+	animation-delay: 0.6s;
+	opacity: 0;
+}
+/* animation of bottom rectangle */
+.bottom_rect_animate {
+	top: 200px;
+	left: -200px;
+	z-index: 2;
+	background-color: #eee;
+	animation: animate_top_rect 0.5s linear ;
+	animation-delay: 0.2s;
+	width: 0;
+}
+/* animation of logo "Shidema".Left 250px*/
+.wrapper_logo_animate {
+	position: relative;
+	animation: animate_wrapper 0.7s ease;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+/* SHIDEMA->style of text */
+span {
+	font-size: 150px;
+	opacity: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate(-150px, -65px);
+	opacity: 0;
+	animation: animate_tria 0.7s ease;
+	animation-delay: 1.2s;
+	animation-fill-mode: forwards;
+}
+/* Style of navigation */
+nav {
+	transform: translateX(-100%);
+	position: fixed;
+	display: flex;
+	justify-content:flex-start;
+	flex-direction: column;
+	text-align: center;
+	background-color: #fff;
+	height: 100vh;
+	left: 0;
+	animation: animate_nav 0.7s ease;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+/* Style of navigation's item */
+nav a {
+	font-size: 2vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	padding: 3vh 6vw;
+	transition: 0.3s;
+}
+/* ITEM's hover */
+nav a:hover {
+	background-color:rgba(217, 217, 217,0.5);
+}
+
+.nav-menu {
+	display: flex;
+	flex-direction: column;
+}
+/* LOGO NAVIGATION */
+
+.logo_shidema {
+	position: relative;	
+	top: 0;
+	left: 0;
+}
+
+.logo_shidema div {
+	position: absolute;
+}
+/* style of rectangles */
+.top_rect, .bottom_rect {
+	width: 100px;
+	height: 40px;
+	background-color: #d9d9d9;
+	top: 0;
+	left: 0;
+
+}
+/* animation of ball */
+.ball {
+	width: 50px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #d9d9d9;
+	border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+	top: 40px;
+	z-index: 3;
+}
+/* animation of triangle */
+.triangle {
+	border: 50px solid transparent; border-top: 140px solid #ededed;
+	left: -50px;
+	opacity: 0.95;
+	z-index: 4;
+}
+/* animation of bottom rectangle */
+.bottom_rect {
+	top: 100px;
+	left: -100px;
+	z-index: 2;
+	background-color: #eee;
+}
+/* animation of logo "Shidema".Left 250px*/
+.wrapper_logo {
+	height: 140px;
+	width: 200px;
+	transform: translateX(50%);
+	margin: 40px auto;
+}
