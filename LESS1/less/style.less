@@ -15,7 +15,7 @@ header p {
 	padding: 40px 0;
 }
 .content {
-	width:100%;
+	width:970px;
 	margin:0 auto;
 	margin-top: 20px;
 	background-color: @bgc_with_img;
@@ -36,26 +36,38 @@ header p {
 	}
 }
 @media (min-width: 992px) {
-	.box {
-		width:18%;
-		padding: 9% 0;
+	.content {
+	width:970px;
+		.box {
+			width:18%;
+			padding: 9% 0;
+		}
 	}
 }
 @media (min-width: 768px) and (max-width: 992px) {
-	.box {
-		width:32%;
-		padding: 16% 0;
+	.content {
+	width:750px;
+		.box {
+			width:32%;
+			padding: 16% 0;
+		} 
 	}
 }
 @media (min-width: 540px) and (max-width: 768px) {
-	.box {
-		width:48%;
-		padding: 24% 0;
-	}
+	.content {
+		width:100%;
+		.box {
+			width:48%;
+			padding: 24% 0;
+		}
+	}	
 }
 @media (min-width: 0px) and (max-width: 540px) {
-	.box {
-		width:98%;
-		padding: 49% 0;
+	.content {
+		width:100%;
+		.box {
+			width:98%;
+			padding: 49% 0;
+		}
 	}
 }
