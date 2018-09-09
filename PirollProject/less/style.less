@@ -142,8 +142,6 @@ h2 {
 			display: inline-block;
 		}
 		.description {
-			display: inline-block;
-			margin-left:20px;
 			strong.number {
 			font-size:1.8rem;
 		}
@@ -154,14 +152,20 @@ h2 {
 		}
 		
 	}
+	.slick-active {
+			outline: none;
+			&:focus {
+				outline: none;
+			}
+	}
 	// Settings prevArrow and nextArrow
 	&-arrow {
 		position: absolute;
-		top:50%;
-		width: 32px;
-		height: 32px;
-		z-index: 9999;
+		z-index: 99;
+		width: 3.2rem;
+		height: 3.2rem;
 		border:none;
+		top:50%;
 		transform: translateY(-50%);
 		cursor: pointer;
 		&:focus {
@@ -169,23 +173,19 @@ h2 {
 		}
 	}
 	&-prev {
-		position: absolute;
-		top:50%;
-		left:-10px;
-		-webkit-background-size: cover;
-		background-size: cover;
-		background: url(../img/skills/features-prev-arrow.svg);
+		left: 0px;
+		background: url(../img/skills/prev-a.svg) center no-repeat;
+		-webkit-background-size: 100%;
+		background-size: 100%;
+
 	}
 	&-next {
-		position: absolute;
-		top:50%;
-		right:-10px;
-		-webkit-background-size: cover;
-		background-size: cover;
-		background: url(../img/skills/features-next-arrow.svg);
+		right: 0px;
+		background: url(../img/skills/next-a.svg) center no-repeat;
+		-webkit-background-size: 100%;
+		background-size: 100%;
 	}
 }
-
 
 
 //Start MEDIA 992px

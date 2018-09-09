@@ -113,10 +113,6 @@ h2 {
 .features-block .features-img {
   display: inline-block;
 }
-.features-block .description {
-  display: inline-block;
-  margin-left: 20px;
-}
 .features-block .description strong.number {
   font-size: 1.8rem;
 }
@@ -124,13 +120,19 @@ h2 {
   font-size: 1.2rem;
   text-transform: uppercase;
 }
+.features .slick-active {
+  outline: none;
+}
+.features .slick-active:focus {
+  outline: none;
+}
 .features-arrow {
   position: absolute;
-  top: 50%;
-  width: 32px;
-  height: 32px;
-  z-index: 9999;
+  z-index: 99;
+  width: 3.2rem;
+  height: 3.2rem;
   border: none;
+  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   cursor: pointer;
@@ -139,18 +141,14 @@ h2 {
   outline: none;
 }
 .features-prev {
-  position: absolute;
-  top: 50%;
-  left: -10px;
-  background-size: cover;
-  background: url(../img/skills/features-prev-arrow.svg);
+  left: 0px;
+  background: url(../img/skills/prev-a.svg) center no-repeat;
+  background-size: 100%;
 }
 .features-next {
-  position: absolute;
-  top: 50%;
-  right: -10px;
-  background-size: cover;
-  background: url(../img/skills/features-next-arrow.svg);
+  right: 0px;
+  background: url(../img/skills/next-a.svg) center no-repeat;
+  background-size: 100%;
 }
 @media (max-width: 991px) {
   .header {
