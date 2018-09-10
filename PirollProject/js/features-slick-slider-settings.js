@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('.features-slider').slick({
   infinite: true,
-  speed:500,
+  speed:300,
   slidesToShow: 4,
   slidesToScroll: 4,
   responsive: [

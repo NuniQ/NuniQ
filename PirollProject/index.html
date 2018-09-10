@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="img/logo.svg" />
+	<link rel="shortcut icon" href="img/sea.jpg" />
 
 	<!-- Font-family:Nunito,Montserrat -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:600|Nunito+Sans" rel="stylesheet">
 	<!-- Connect CSS-style Bootstrap 4.1 -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Connect CSS-style Slick slider -->
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	 <!-- Add the new slick-theme.css if you want the default styling -->
@@ -23,7 +23,10 @@
 		<div class="container">
 			<nav class="navbar navbar-expand-lg">
 				<a class="navbar-brand" href="/">
-					<img src="img/logo.svg" alt="Logo">
+					<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="25px" height="25px" viewBox="0 0 25 25">
+<image x="0" y="0" width="25" height="25" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAZCAQAAABj/j2vAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAGdSURBVDjLnZGvS0NxFMXPniKDfcC5oGAQwSgmi8GgUQw2QTDZLDLwHxDMJs2rtgXLqiAKghZNmjSKIIi+sDk5hk333XtvY/N+073nnPvjfHPcaUH/jftI4/8WS+OR9iQ1taSJ1KtK+pBUzcCW1JS0J4kq5pxcd2PWMA02aGDWEliOc0y1lUzzjtnpIhR4whxKHGKeKHShO5h3pn/TXcwbUwHhCPNAXiLPA+YowKZ4w+x2ChFXmNO/fJEmZqWdrWCaLP6hp5gronCd+c6NjHKLqQRoBXPLaODJfOIPOjeyj3mhFGAlXjD7oSdJeftGZokxWwl0CxMz2/Ek3aB14yWmloHWMJehJ2lKBbemZGCtrbo8SVJK1DHXPdBrTD30JE05xpjlDGQZY47VP3jFvA5eH2hK763SDc4w38wFlTm+MWcDiCXyxJjHoPKIiTN/O7PBNsaU21kZY7YHFEsSN5g6RYkidczNEGKJSb4wFxIXmC8ms3kj2eVGPCatamasqE1JB581DRs8Y4x57s2J+ujXZUnW+tCT2/NPMCf9GD9mMqiCBs71yQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wOS0wOVQxNzo0NjowNCswMDowMGn2KjQAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDktMDlUMTc6NDY6MDQrMDA6MDAYq5KIAAAAAElFTkSuQmCC" /></svg>
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDown" aria-controls="navbarDown" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="toggler-icon"></span>
@@ -88,7 +91,7 @@
 	<section class="skills">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5 col-10 offset-lg-0 offset-1 first">
+				<div class="col-lg-5 offset-lg-0 col-md-8 offset-md-2 col-12">
 					<h2>Professional Skills</h2>
 					<div class="progress-bar-set">
 						<p class="label-Edit">
@@ -120,9 +123,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-1 first"></div>
-				<div class="col-lg-6 second">
-				<div class="skills-image"></div>
+				<div class="col-lg-1 col-0"></div>
+				<div class="col-lg-6 second col-12 mh-100">
+				<div class="logo-image"></div>
 				</div>
 			</div>	
 		</div>
@@ -181,7 +184,22 @@
 			</div>
 		</div>
 	</section>
+	<div class="gallery">
+	<div class="gallery-work">
+		<div class="gallery-work-item"><a href="/"><i class="fas fa-eye"></i></a></div>
+		<div class="gallery-work-item"><a href="/"><i class="fas fa-eye"></i></a></div>
+		<div class="gallery-work-item md-none"><a href="/"><i class="fas fa-eye"></i></a></div>
+		<div class="gallery-work-item md-none"><a href="/"><i class="fas fa-eye"></i></a></div>
+		<div class="gallery-work-item sm-none"><a href="/"><i class="fas fa-eye"></i></a></div>
+		<div class="gallery-work-item sm-none"><a href="/"><i class="fas fa-eye"></i></a></div>
+		<div class="gallery-work-item xs-none"><a href="/"><i class="fas fa-eye"></i></a></div>
+		<div class="gallery-work-item xs-none"><a href="/"><i class="fas fa-eye"></i></a></div>
 
+	</div>
+	<div class="btn-load"><a href="/">Load more work</a></div>
+	</div>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<script src="js/main.js"></script>
 	<!-- Connect SCRIPTS Bootstrap 4.1 -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -189,7 +207,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	
 	
-
+	
 	<!-- Connect Scripts Slick slider -->
 
 	<script type="text/javascript" src="slick/slick.min.js"></script>
