@@ -1,0 +1,52 @@
+//include Fonts
+//ApercuPro - fonts
+@font-face {
+  font-family: 'ApercuPro-Bold';
+  src: url('../fonts/ApercuPro-Bold/ApercuPro-Bold.eot'),
+   	   url('../fonts/ApercuPro-Bold/ApercuPro-Bold.woff') format('woff'),
+   	   url('../fonts/ApercuPro-Bold/ApercuPro-Bold.ttf')  format('truetype'),
+       url('../fonts/ApercuPro-Bold/ApercuPro-Bold.svg') format('svg');
+  font-weight:bold;
+}
+@font-face {
+  font-family: 'ApercuPro-Regular';
+  src: url('../fonts/ApercuPro-Regular/ApercuPro.eot'),
+   	   url('../fonts/ApercuPro-Regular/ApercuPro.woff') format('woff'),
+   	   url('../fonts/ApercuPro-Regular/ApercuPro.ttf')  format('truetype'),
+   	   url('../fonts/ApercuPro-Regular/ApercuPro.svg') format('svg');
+  font-weight:regular;
+}
+@font-face {
+  font-family: 'ApercuPro-Mono';
+  src: url('../fonts/ApercuPro-Mono/ApercuPro-Mono.eot'),
+  	   url('../fonts/ApercuPro-Mono/ApercuPro-Mono.woff') format('woff'),
+  	   url('../fonts/ApercuPro-Mono/ApercuPro-Mono.ttf')  format('truetype'),
+  	   url('../fonts/ApercuPro-Mono/ApercuPro-Mono.svg') format('svg');
+  font-weight:mono;
+}
+@font-face {
+  font-family: 'ApercuPro-Light';
+  src: url('../fonts/ApercuPro-Light/ApercuPro-Light.eot'),
+  	   url('../fonts/ApercuPro-Light/ApercuPro-Light.woff') format('woff'),
+  	   url('../fonts/ApercuPro-Light/ApercuPro-Light.ttf')  format('truetype'),
+  	   url('../fonts/ApercuPro-Light/ApercuPro-Light.svg') format('svg');
+  font-weight:light;
+}
+//CIRCE - fonts
+@font-face {
+  font-family: 'Circe-Bold';
+  src: url('../fonts/Circe-Bold/Circe-Bold.eot'),
+  	   url('../fonts/Circe-Bold/Circe-Bold.woff') format('woff'),
+  	   url('../fonts/Circe-Bold/Circe-Bold.ttf')  format('truetype'),
+  	   url('../fonts/Circe-Bold/Circe-Bold.svg') format('svg');
+  font-weight:bold;
+}
+@font-face {
+  font-family: 'Circe-Regular';
+  src: url('../fonts/Circe-Regular/Circe-Regular.eot'),
+  	   url('../fonts/Circe-Regular/Circe-Regular.woff') format('woff'),
+  	   url('../fonts/Circe-Regular/Circe-Regular.ttf')  format('truetype'),
+  	   url('../fonts/Circe-Regular/Circe-Regular.svg') format('svg');
+  font-weight:regular;
+}
+
