@@ -7,6 +7,12 @@
 .color-1 {
   background-color: #a0b3c9; }
 
+.color-2 {
+  background-color: #d0cec9; }
+
+.color-3 {
+  background-color: #d2e0b4; }
+
 html {
   font-size: 18px; }
 
@@ -14,11 +20,9 @@ body {
   position: relative;
   min-width: 320px;
   overflow-x: hidden;
-  background-color: #fff;
   color: #000;
-  font-size: 18px;
-  font-family: "ApercuPro-Regular", sans-serif;
-  padding-top: 60px; }
+  font-size: 1em;
+  font-family: "ApercuPro-Regular", sans-serif; }
 
 h1 {
   font-family: "ApercuPro-Bold", sans-serif;
@@ -34,11 +38,45 @@ a {
   font-size: 15px;
   font-family: 'Circe-Regular'; }
 
+.all-for-hw {
+  padding-top: 50px; }
+
 .container {
+  display: block;
   max-width: 1160px;
   margin: 0 auto; }
 
+/* 	border: solid 1px #000 */
+.burger-default {
+  position: relative;
+  width: 20px;
+  height: 16px;
+  cursor: pointer; }
+  .burger-default span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000; }
+    .burger-default span:nth-child(1) {
+      top: 0; }
+    .burger-default span:nth-child(2) {
+      top: 6px; }
+    .burger-default span:nth-child(3) {
+      top: 12px; }
+
 .header-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.header-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,64 +85,39 @@ a {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
-  .header-main .header-left {
+  align-items: center;
+  width: 180px; }
+
+.header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  width: 260px; }
+  .header-right a {
+    display: block;
+    color: #000;
+    font-family: "Circe-Regular", sans-serif;
+    font-size: 15px; }
+  .header-right .acc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 180px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .header-main .header-left .burger-menu {
-      position: relative;
-      width: 20px;
-      height: 20px;
-      cursor: pointer; }
-      .header-main .header-left .burger-menu span {
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        top: 0;
-        left: 0;
-        background-color: #000; }
-        .header-main .header-left .burger-menu span:nth-child(1) {
-          top: 3px; }
-        .header-main .header-left .burger-menu span:nth-child(2) {
-          top: 9px; }
-        .header-main .header-left .burger-menu span:nth-child(3) {
-          top: 15px; }
-  .header-main .header-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 260px; }
-    .header-main .header-right .help {
-      height: 25px; }
-    .header-main .header-right .account {
-      width: 160px;
-      height: 25px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      .header-main .header-right .account .acc-ico {
-        margin-bottom: 3px; }
-        .header-main .header-right .account .acc-ico img {
-          display: block;
-          height: 15px;
-          width: 15px; }
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 160px; }
+    .header-right .acc-ico {
+      height: 15px;
+      margin-bottom: 1px; }
 
 @media (max-width: 575.98px) {
   max-width: 575.98px; }
