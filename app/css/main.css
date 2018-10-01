@@ -10,7 +10,10 @@
 @media (max-width: 1199.98px) {
   max-width: 1199.98px; }
 
-@improt "_mixins.sass" {}.main {
+@improt "_mixins.sass" {}.container {
+  width: 1160px; }
+
+.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +32,8 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 0 auto; }
     .main-slider-block {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -53,7 +57,8 @@
         .main-slider-block-right .mirror-image {
           position: relative;
           z-index: 9999;
-          width: 100%; }
+          width: 100%;
+          margin-left: -60px; }
           .main-slider-block-right .mirror-image::before {
             content: "";
             position: absolute;
