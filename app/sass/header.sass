@@ -34,11 +34,13 @@ a
 .header
 	&-main
 		display: flex
+		justify-content: space-between
 		align-items: center
-		.logo
-			width: 160px
-		.mg-r
-			width: 720px
+		.header-left
+			display: flex
+			justify-content: space-between
+			width: 180px
+			align-items: center
 			.burger-menu
 				position: relative
 				width: 20px
@@ -57,21 +59,24 @@ a
 						top: 9px
 					&:nth-child(3)
 						top: 15px
-		.help
-			width: 100px
-			height: 25px
-		.account
-			width: 160px
-			height: 25px
+		.header-right
 			display: flex
 			justify-content: space-between
-			align-items: center
-			.acc-ico
-				margin-bottom: 3px
-				img
-					display: block
-					height: 15px
-					width: 15px
+			width: 260px
+			.help
+				height: 25px
+			.account
+				width: 160px
+				height: 25px
+				display: flex
+				justify-content: space-between
+				align-items: center
+				.acc-ico
+					margin-bottom: 3px
+					img
+						display: block
+						height: 15px
+						width: 15px
 
 
 	
