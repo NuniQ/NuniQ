@@ -152,6 +152,23 @@ p {
     height: 100%; }
   .header__top {
     padding-top: 40px; }
+    .header__top .form__search {
+      position: absolute;
+      display: none;
+      right: 15px;
+      top: 110px; }
+      .header__top .form__search input[type="search"] {
+        outline: none;
+        border: none;
+        font-size: 14px;
+        width: 250px;
+        height: 40px; }
+      .header__top .form__search input[type="submit"] {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer; }
     .header__top__logo {
       display: -webkit-box;
       display: -ms-flexbox;
