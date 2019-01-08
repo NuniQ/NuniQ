@@ -5,76 +5,69 @@
 	<title>Waxom</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 </head>
 <body>
-	<header class="header" style="">
-		<div class="black-opacity"></div>
-		<div class="header-top">
-			<div class="logo">
-				<a href="/"><img src="img/logo.png" alt="Logotip"></a>
-				<a href="/"><h1>Waxom</h1></a>
+<header class="header">
+	<div class="container d-flex flex-column">
+		<div class="header__top row align-items-center">
+			<div class="header__top__logo col-xl-2 mr-auto col-3">
+				<a href="/"><img src="img/logo.png" alt="Logo Waxom"></a>
+				<a href="/"><h1 class="logo-name">Waxom</h1></a>
 			</div>
-			<ul class="navbar">
-				<a href="#" class="navbar-item">
-					<li>Home</li>
-				</a>
-				<a href="#" class="navbar-item">
-					<li>About us</li>
-				</a>
-				<a href="#" class="navbar-item">
-					<li>Portfolio</li>
-				</a>
-				<a href="#" class="navbar-item">
-					<li>Features</li>
-				</a>
-				<a href="#" class="navbar-item">
-					<li>Blog</li>
-				</a>
-				<a href="#" class="navbar-item">
-					<li>Pricing</li>
-				</a>
-				<a href="#" class="navbar-item">
-					<li>Shortcodes</li>
-				</a>
-				<a href="#" class="navbar-item">
-					<li>Contact</li>
-				</a>
-			</ul>
-			<div class="func">
-				<a href="#"><div class="cart icon"></div></a>
-				<a href="#"><div class="search-toggle icon"></div></a>
-				<div class="toggle-navbar icon">
+			<nav class="header__top__navbar col-xl-7 col-12 col-sm-5 col-md-4 col-lg-3">
+				<ul class="top_nav align-items-center justify-content-center flex-column d-flex flex-xl-row">
+					<a href="/" class="navbar__item">
+						<li>Home</li>
+					</a>
+					<a href="/" class="navbar__item">
+						<li>About us</li>
+					</a>
+					<a href="/" class="navbar__item">
+						<li>Portfolio</li>
+					</a>
+					<a href="/" class="navbar__item">
+						<li>Features</li>
+					</a>
+					<a href="/" class="navbar__item">
+						<li>Blog</li>
+					</a>
+					<a href="/" class="navbar__item">
+						<li>Pricing</li>
+					</a>
+					<a href="/" class="navbar__item">
+						<li>Shortcodes</li>
+					</a>
+					<a href="/" class="navbar__item">
+						<li>Contact</li>
+					</a>
+				</ul>			
+			</nav>
+			<div class="func d-flex col-xl-1 justify-content-xl-between justify-content-around col-5 col-sm-4 col-md-3 col-lg-2">
+				<div class="icon cart"></div>
+				<div class="icon search"></div>
+				<div class="navbar-toggle">
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
-			</div>	
+			</div>
 		</div>
-		<div class="header-bottom">
+		<div class="header__slider align-self-center d-flex flex-column align-items-center">
 			<div class="slider">
-				<div class="slider-slide">
-					<h3>Unique and Modern Design1</h3>
+				<div class="slider__slide">
+					<h3>Unique and Modern Design</h3>
 					<h2>Portfolio PSD Template</h2>
 					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
-				</div>
-				<div class="slider-slide">
-					<h3>Unique and Modern Design2</h3>
-					<h2>Portfolio PSD Template</h2>
-					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
-				</div>
-				<div class="slider-slide">
-					<h3>Unique and Modern Design3</h3>
-					<h2>Portfolio PSD Template</h2>
-					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
-				</div>
+				</div>				
 			</div>
-			<a href="#" class="btn-default get_started">Get Started</a>
+			<a href="/" class="btn-default header__btn">Get Started</a>
 		</div>
-	</header>
+	</div>
+</header>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/header.js"></script>

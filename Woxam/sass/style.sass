@@ -1,3 +1,9 @@
+$header-color: #000
+$link_active-color: #c7b299
+$link-color: #ffffff
+$btn-color: #998675
+$btn-border-color: #736357
+
 html
 	font-size: 14px
 	font-family: 'Raleway'
@@ -5,13 +11,24 @@ html
 	body
 		background-color: #fff
 		min-width: 320px
-
+.hidden
+	display: none
 a
+	display: inline-block
+	font-family: 'Montserrat'
+	font-weight: 100
 	text-decoration: none
+	color: $link-color
+	transition: color 0.2s ease
+	&:hover
+		color: $link_active-color
+		text-decoration: none
 h1
 	font-size: 34px
+	font-family: 'Raleway'
+	font-weight: lighter
 h2
-	font-size: 52px
+	font-size: 6vmin
 	font-family: 'Raleway'
 	font-weight: 900
 h3
@@ -22,19 +39,144 @@ p
 	font-family: 'Montserrat'
 .btn-default
 	display: inline-block
-	background-color: #998675
+	background-color: $btn-color
 	padding: 18px 45px
 	border-radius: 5px
 	font-size: 16px
 	font-weight: 900
 	position: relative
 	color: #fff
-	border-bottom: 4px solid #736357
+	border-bottom: 2px solid $btn-border-color
 	transition: 0.2s
 	cursor: pointer
-	&:hover
-		border-bottom: 4px solid #998675
-		background-color: #736357 
+		
+.navbar-toggle
+	position: relative
+	width: 24px
+	height: 24px
+	cursor: pointer
+	display: none
+	@media screen and (max-width: 1200px)
+		display: block
+	span
+		position: absolute
+		display: flex
+		width: 100%
+		height: 2px
+		background-color: #fff
+		&:nth-child(1)
+			top: 20%
+			transform: translateY(-50%)
+			transform-origin: center
+			transition: 0.2s all ease
+		&:nth-child(2)
+			top: 50%
+			transform: translateY(-50%)
+			transition: 0.3s opacity ease
+		&:nth-child(3)
+			top: 80%
+			transform-origin: center
+			transform: translateY(-50%)
+			transition: 0.2s all ease
+	&.active
+		span
+			position: absolute
+			display: flex
+			width: 100%
+			height: 2px
+			background-color: #fff
+			&:nth-child(1)
+				top: 50%
+				transform: translateY(-50%) rotate(-45deg)
+			&:nth-child(2)
+				top: 50%
+				transform: translateY(-50%)
+				opacity: 0
+				transition: 0s opacity ease
+			&:nth-child(3)
+				top: 50%
+				transform: translateY(-50%) rotate(45deg)
+
+
+// CSS-styles for Header
+.header
+	position: relative
+	width: 100%
+	height: 100vh
+	background-size: cover
+	background-image: url(../img/header-photo.jpg)
+	background-position: right
+	z-index: 1000
+	&::before
+		content: ""
+		width: 100%
+		height: 100%
+		position: absolute
+		background-color: $header-color
+		opacity: 0.5
+		z-index: -1
+	.container
+		position: relative
+		height: 100%
+	&__top
+		padding-top: 40px
+		&__logo
+			display: flex
+			align-items: center
+			justify-content: space-between
+			a:hover
+				color: $link-color
+
+		&__navbar
+			@media screen and (max-width: 1200px)
+				display: none
+				position: absolute
+				right: 0
+				top: 110px
+			ul.top_nav
+				margin: 0
+				@media screen and (max-width: 1200px)
+					background-color: rgba($btn-border-color, 0.8)
+					padding: 10px 0 
+				.navbar__item
+					margin: 0 10px
+					@media screen and (max-width: 1200px)
+						padding: 10px 0
+	.func
+		.icon
+			cursor: pointer
+			&.cart
+				width: 18px
+				height: 24px
+				background: url(../img/icon-cart.png)
+			&.search
+				width: 24px
+				height: 24px
+				background: url(../img/icon-search.png)
+	&__slider
+		margin: auto
+		align-self: center
+		.slider
+			&__slide
+				color: #fff
+				text-align: center
+				h2
+					margin-top: 25px
+				h3
+					
+				p
+					margin-top: 30px
+		.header__btn
+			margin: 5vmin auto 0 auto
+			&:hover
+				color: $link-color
+
+
+
+
+
+
+
 
 
 
