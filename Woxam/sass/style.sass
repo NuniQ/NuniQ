@@ -2,8 +2,11 @@ $header-color: #000
 $link_active-color: #c7b299
 $link-color: #ffffff
 $btn-color: #998675
+$btn-hover-color: #b5a494
 $btn-border-color: #736357
-
+$arrow-color: #e5d1be
+$dots-color: #999
+$dots-border-color: #e5d1be
 html
 	font-size: 14px
 	font-family: 'Raleway'
@@ -106,6 +109,7 @@ p
 	background-size: cover
 	background-image: url(../img/header-photo.jpg)
 	background-position: right
+	background-attachment: fixed
 	z-index: 1000
 	&::before
 		content: ""
@@ -131,17 +135,23 @@ p
 			@media screen and (max-width: 1200px)
 				display: none
 				position: absolute
+				z-index: 999
 				right: 0
 				top: 110px
+				max-width: 340px
 			ul.top_nav
 				margin: 0
 				@media screen and (max-width: 1200px)
-					background-color: rgba($btn-border-color, 0.8)
+					width: auto
+					background-color: rgba(#A78257, 1)
 					padding: 10px 0 
+					border-radius: 10px
 				.navbar__item
 					margin: 0 10px
 					@media screen and (max-width: 1200px)
+						width: 100%
 						padding: 10px 0
+						text-align: center
 	.func
 		.icon
 			cursor: pointer
@@ -154,10 +164,12 @@ p
 				height: 24px
 				background: url(../img/icon-search.png)
 	&__slider
-		margin: auto
-		align-self: center
+		margin: auto 0
+		text-align: center
 		.slider
 			&__slide
+				outline: none
+				user-select: none
 				color: #fff
 				text-align: center
 				h2
@@ -166,10 +178,87 @@ p
 					
 				p
 					margin-top: 30px
+		.slick-dots
+			position: absolute
+			bottom: -35vh
+			button::before
+				content: ""
+				width: 10px
+				height: 10px
+				background-color: $dots-color
+				border-radius: 50%
+				opacity: 1
+				transition: 0.1s
+			.slick-active
+				button::before
+					content: ""
+					width: 13px
+					height: 13px
+					border: 1px solid $dots-border-color
+					background-color: transparent
+					border-radius: 50%
+					opacity: 1
+
+		.header__arrow
+			position: absolute
+			z-index: 9999
+			display: block
+			width: 40px
+			height: 60px
+			border: none
+			outline: none
+			top: 50%
+			transform: translateY(-50%)
+			cursor: pointer
+			background-color: transparent
+			&:focus
+				outline: none
+			&::before, &::after
+				content: ""
+				position: absolute
+				width: 100%
+				height: 3px
+				background-color: $arrow-color
+			&.header__next
+				right: 0
+				@media screen and (max-width: 992px)
+					right: -35px
+				@media screen and (max-width: 768px)
+					right: -55px
+				@media screen and (max-width: 640px)
+					display: none
+				&::before, &::after
+					top: 50%
+					left: 40px
+				&::before
+					transform-origin: 0
+					transform: rotate(135deg)
+				&::after
+					transform-origin: 0
+					transform: rotate(-135deg)
+			&.header__prev
+				left: 0
+				@media screen and (max-width: 992px)
+					left: -35px
+				@media screen and (max-width: 768px)
+					left: -55px
+				@media screen and (max-width: 640px)
+					display: none
+				&::before, &::after
+					top: 50%
+					right: 40px
+				&::before
+					transform-origin: 100%
+					transform: rotate(135deg)
+				&::after
+					transform-origin: 100%
+					transform: rotate(-135deg)
 		.header__btn
 			margin: 5vmin auto 0 auto
 			&:hover
 				color: $link-color
+				background-color: $btn-hover-color 
+
 
 
 
