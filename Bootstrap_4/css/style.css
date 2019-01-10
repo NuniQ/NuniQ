@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+html {
+  overflow-x: hidden;
+}
 body {
   overflow-x: hidden;
   min-width: 320px;
@@ -11,12 +14,15 @@ body {
   display: block;
   height: 4rem;
   margin-top: -4rem; }
-
+.home {
+  width: 100%;
+}
 .home .navbar {
   text-transform: uppercase;
   font-weight: 700;
   font-size: .9rem;
   letter-spacing: .1rem;
+  width: 100vw;
   background-color: #1f0101 !important; }
   .home .navbar-brand .logo-image {
     height: 50px; }
@@ -159,7 +165,7 @@ footer {
   footer svg.svg-inline--fa:hover {
     color: #dc0330; }
   footer hr.socket {
-    width: 100%;
+    width: 100vw;
     border-top: .2rem solid #666; }
 
 /* Media Queries*/
